@@ -62,6 +62,6 @@ public class CountryController {
         service.deleteCountry(code);
 
         // 一覧画面にリダイレクト
-        return "redirect:/country.list";
+        return "redirect:/country/list";
     }
 }
