@@ -7,8 +7,9 @@
 <body>
     <h1>Country 削除</h1>
     <form method="post" action="/country/delete">
-        <input type="text" name="code" th:value="${code}">
+        <input type="text" name="code" th:value="${country.code}">
         <button type="submit">送信</button>
+        <a th:href="@{/country/list}">一覧に戻る</a>
     </form>
 </body>
 </html>
